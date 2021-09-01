@@ -16,17 +16,20 @@
   }
 
   &__preview {
+    height: 505px;
     width: 100%;
-    height: 100%;
+    //height: 100%;
     box-shadow: 4px 3px 20px rgba(0, 0, 0, 0.7);
-
+    @include medium {
+      height: 300px;
+    }
   }
 
 
 
   &__image {
     width: 100%;
-
+    height: 100%;
   }
 
   &__thumbnails {
