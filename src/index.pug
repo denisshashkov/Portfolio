@@ -35,7 +35,9 @@ html(lang="ru")
               .mountains__content
                 .user-data
                   .user-data__desc Личный сайт<br> веб разработчика
-                  h1.user-data__name Шашков денис
+                  h1.user-data__name Шашков Денис
+
+
               .mountains__button
                 .mountains__button-btn
                   button(type='button').scroll__icon
@@ -52,6 +54,8 @@ html(lang="ru")
                       ['Проживаю:', 'Беларусь'],
                       ['Возраст:', '36 лет'],
                       ['Родился:', '19 сентября 1983'],
+                      ['Телефон:', '+375 29 1619901'],
+                      ['E-mail:', 'shashkov-56@mail.ru'],
                     ]
                   table.user-info__data
                     tbody.user-info__data-body
@@ -63,7 +67,7 @@ html(lang="ru")
                 h4.about__prolog Привет, меня зовут
                 h2.about__title Шашков Денис
                 .about__text Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                .about__ps Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+                .about__ps Обучаюсь веб-разработке в Loftschool. Закончил курсы "Основы верстки сайтов", "Веб-разработка для начинающих", "Vue.js Продвинутая веб разработка".
         <!--===========Triangles Block=============-->
           include ./components/blocks/trianglesOne/trianglesOne
         <!--============Values Section==============-->
@@ -73,7 +77,6 @@ html(lang="ru")
                 .values__content
                   .values__header
                     h2.title.values__title Чем я могу быть полезен вам
-                    p.values__description Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
                   .values__skills#skills-list
                     vc-skills 
         <!--============Works Section===============-->          
@@ -82,7 +85,7 @@ html(lang="ru")
               .container.works__container
                 h2.title.works__title Мои работы
                 .works__wrapper
-                  .works__slider
+                  .works__slider                
                     vc-works-slider
                   .works__content
                     .works__tags

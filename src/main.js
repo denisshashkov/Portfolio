@@ -16,10 +16,6 @@ import "./components/blocks/form/validations";
 import "./scripts/progressBar";
 import "./scripts/userOptions";
 
-
-
-
-
 //////////////Skills////////////////////////////
 
 import Skills from './components/blocks/skills/skills';
@@ -32,7 +28,6 @@ new Vue({
 });
 
 /////////////////WORKS//////////////////////////
-
 import WorksSlider from './components/blocks/works-slider/works-slider';
 import Tags from './components/blocks/tags/tags';
 import Work from './components/blocks/work/work';
@@ -45,6 +40,7 @@ new Vue({
     vcWork: Work,
   }
 });
+
 
 /////////////////tooltip///////////////////////////
 

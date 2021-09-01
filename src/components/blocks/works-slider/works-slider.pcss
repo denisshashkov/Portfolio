@@ -12,15 +12,24 @@
 
   &__fream {
     position: relative;
+    z-index: 1;
   }
 
   &__preview {
+    height: 505px;
     width: 100%;
-    height: 100%;
+    //height: 100%;
+    box-shadow: 4px 3px 20px rgba(0, 0, 0, 0.7);
+    @include medium {
+      height: 300px;
+    }
   }
+
+
 
   &__image {
     width: 100%;
+    height: 100%;
   }
 
   &__thumbnails {
@@ -88,11 +97,11 @@
 .controls--works {
   .controls__item--works {
     &:nth-child(1)>.btn {
-      transform: rotate(-90deg);
+      transform: rotate(180deg);
     }
 
     &:nth-child(2)>.btn {
-      transform: rotate(90deg);
+      //transform: rotate(90deg);
     }
   }
 }

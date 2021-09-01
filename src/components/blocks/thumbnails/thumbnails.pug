@@ -4,7 +4,7 @@ script(type="text/x-template")#thumbnails
       li(
         v-for="work in works"
         :key="work.id"
-        :class="{ 'thumbnails__item--active': work.index === activeWork }"
+          :class="{ 'thumbnails__item--active': work.index === activeWork }"
         @click="changeSlide"
         :data-index="work.index"
       ).thumbnails__item

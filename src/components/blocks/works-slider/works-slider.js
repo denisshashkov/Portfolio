@@ -1,6 +1,7 @@
 import Thumbnails from "../thumbnails/thumbnails";
 import xhr from "../../../scripts/xhrRequests";
 import EventBus from "../../../scripts/eventBus";
+import thumbnails from "../thumbnails/thumbnails";
 
 export default {
   template: "#works-slider-template",
@@ -21,13 +22,15 @@ export default {
 
       return work;
     },
-    prevSlide() {
-      this.activeWork--;
-    },
     nextSlide() {
-      this.activeWork++;
+      setTimeout(() => this.activeWork--, 200);
+    },
+    prevSlide() {
+      setTimeout(() => this.activeWork++, 200);
     },
   },
+
+
   mounted() {
     xhr("get", "works/343")
       .then((works) => works.map((work, index) => this.workFunc(work, index)))

@@ -6,8 +6,8 @@ script(type="text/x-template")#works-slider-template
       .works-slider__controls
         ul.controls.controls--works
           li(@click="nextSlide").controls__item--works
-            button(type='button', class=`btn btn--works`, :disabled="activeWork === works.length - 1")
+            button(type='button', class=`btn btn--works`, :disabled="activeWork ===0")
           li(@click="prevSlide").controls__item--works
-            button(type='button', class=`btn btn--works`, :disabled="activeWork === 0")
+            button(type='button', class=`btn btn--works`, :disabled="activeWork ===  works.length - 1")
       .works-slider__thumbnails: vc-thumbnails(:works="reversedWorks", :activeWork="activeWork")
       .works-slider__number {{ activeWork + 1 }}

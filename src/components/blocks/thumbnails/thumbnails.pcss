@@ -1,14 +1,17 @@
 .thumbnails {
   &__list {
-    display: flex;
+    display: none;
+    //display: flex;
     flex-direction: column;
     justify-content: flex-end;
     will-change: transform;
     transition: transform .3s;
-    height: auto;
+    height: 300px;
     overflow: hidden;
     padding: 3px;
     margin: -3px;
+    will-change: up;
+    transition: up 0.3s;
 
 
     @media screen and (max-width: 1300px) {
