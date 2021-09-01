@@ -1,6 +1,6 @@
 #   Portfolio
 
-##  https://denisshashkov.github.io/Portfolio/src/index.pug
+##  https://denisshashkov.github.io/Portfolio/
 
 ##  Чтобы развернуть проект необходимо:
 ```sh
